@@ -48,7 +48,7 @@ const App = () => {
         <Drawer anchor='right' open={cartOpen} onClose={() => setCartOpen(false)}>
           Cart
         </Drawer>
-        <StyledButton>
+        <StyledButton onClick={() => setCartOpen(true)}>
           <Badge>
             <AddShoppingCartIcon />
           </Badge>
