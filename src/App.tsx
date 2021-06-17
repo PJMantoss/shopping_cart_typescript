@@ -29,6 +29,12 @@ const App = () => {
 
     console.log(data);
 
+    const getTotalItems = () => null;
+
+    const handleAddToCart = () => null;
+
+    const removeFromCart = () => null;
+
   return (
     <div className="App">
       Start
