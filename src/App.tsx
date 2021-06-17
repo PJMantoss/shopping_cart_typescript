@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useQuery } from 'react-query';
+import { useQuery } from 'react-query'; //useQuery hook
 //Components
 import Drawer from '@material-ui/core/Drawer';
 import LinearProgress from '@material-ui/core/LinearProgress';
@@ -23,7 +23,8 @@ const getProducts = async (): Promise<CartItemType[]> =>
   await (await fetch('https://fakestoreapi.com/products')).json()
 
 const App = () => {
-  const {} = useQuery();
+  const {data, isLoading, error} = useQuery<CartItemType[]>('products', getProducts);
+
   return (
     <div className="App">
       Start
