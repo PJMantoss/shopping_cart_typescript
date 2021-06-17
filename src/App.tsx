@@ -33,7 +33,7 @@ const App = () => {
 
     console.log(data);
 
-    const getTotalItems = () => null;
+    const getTotalItems = (items: cartItemType[]) => null;
 
     const handleAddToCart = () => null;
 
@@ -49,7 +49,7 @@ const App = () => {
           Cart
         </Drawer>
         <StyledButton onClick={() => setCartOpen(true)}>
-          <Badge>
+          <Badge badgeContent={getTotalItems(cartItems)} color="error">
             <AddShoppingCartIcon />
           </Badge>
         </StyledButton>
