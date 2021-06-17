@@ -19,6 +19,10 @@ export type CartItemType = {
   amount: number;
 }
 
+const getProducts = async () => {
+  await (await fetch('https://fakestoreapi.com/products')).json()
+}
+
 const App = () => {
   return (
     <div className="App">
