@@ -8,6 +8,12 @@ import AddShopingCartIcon from '@material-ui/icons/AddShoppingCart';
 import Badge from '@material-ui/core/Badge';
 //Styles
 import { Wrapper } from './App.styles';
+//Types of properties we'll be fetching from the FakeStore API
+export type CartItemType = {
+  id: number;
+  category: string;
+  description: string;
+}
 
 const App = () => {
   return (
