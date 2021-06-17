@@ -6,6 +6,6 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 const client = new QueryClient();
 
 ReactDOM.render(
-  <QueryClientProvider client={}>
+  <QueryClientProvider client={client}>
     <App />
   </QueryClientProvider>, document.getElementById('root'));
