@@ -35,6 +35,9 @@ const App = () => {
 
     const removeFromCart = () => null;
 
+    if(isLoading) return <LinearProgress />
+    if(error) return <div className="errorDiv">Something went wrong...</div>
+
   return (
     <div className="App">
       Start
