@@ -3,6 +3,8 @@ import { useQuery } from 'react-query';
 //Components
 import Drawer from '@material-ui/core/Drawer';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import Grid from '@material-ui/core/Grid';
+import AddShopingCart from '@material-ui/icons/AddShoppingCart';
 
 const App = () => {
   return (
