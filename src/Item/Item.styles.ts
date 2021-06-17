@@ -5,5 +5,11 @@ export const Wrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
     border: 1px solid lightblue;
+    border-radius: 20px;
+
+    button {
+        border-radius: 0 0 20px 20px;
+    }
 `;
