@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useQuery } from 'react-query'; //useQuery hook
 //Components
+import Item from './Item/Item';
 import Drawer from '@material-ui/core/Drawer';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Grid from '@material-ui/core/Grid';
@@ -40,7 +41,15 @@ const App = () => {
 
   return (
     <div className="App">
-      Start
+      <Wrapper>
+        <Grid container spacing={3}>
+          {data?.map(item => (
+            <Grid item key={} xs={} sm={}>
+              <Item />
+            </Grid>
+          ))}
+        </Grid>
+      </Wrapper>
     </div>
   );
 }
