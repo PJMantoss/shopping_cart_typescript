@@ -45,6 +45,9 @@ const App = () => {
   return (
     <div className="App">
       <Wrapper>
+        <Drawer anchor='right' open={cartOpen} onClose={() => setCartOpen(false)}>
+          Cart
+        </Drawer>
         <Grid container spacing={3}>
           {data?.map(item => (
             <Grid item key={item.id} xs={12} sm={4}>
