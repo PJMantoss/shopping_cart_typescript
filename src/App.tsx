@@ -44,8 +44,8 @@ const App = () => {
       <Wrapper>
         <Grid container spacing={3}>
           {data?.map(item => (
-            <Grid item key={} xs={} sm={}>
-              <Item />
+            <Grid item key={item.id} xs={4} sm={12}>
+              <Item item={item} handleAddToCart={handleAddToCart} />
             </Grid>
           ))}
         </Grid>
