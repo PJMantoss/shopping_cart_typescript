@@ -1,7 +1,9 @@
-import styled from 'styled-components';
+import CartItem from '../CartItem/CartItem';
+//Types
+import { CartItemType } from '../App';
+//styles
+import { Wrapper } from './Cart.styles';
 
-export const Wrapper = styled.aside`
-    width: 500px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-`;
+type Props = {
+    
+}
