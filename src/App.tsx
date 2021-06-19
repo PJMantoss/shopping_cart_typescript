@@ -51,6 +51,7 @@ const App = () => {
           <Cart 
               cartItems={cartItems}
               addToCart={handleAddToCart}
+              removeFromCart={removeFromCart}
           />
         </Drawer>
         <StyledButton onClick={() => setCartOpen(true)}>
