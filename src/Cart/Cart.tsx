@@ -11,7 +11,11 @@ type Props = {
 }
 
 const Cart: React.FC<Props> = ({ cartItems, addToCart, removeFromCart }) => {
-    return
+    return (
+        <Wrapper>
+            <h2>Your Shopping Cart</h2>
+        </Wrapper>
+    )
 }
 
 export default Cart;
