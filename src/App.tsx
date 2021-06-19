@@ -49,7 +49,8 @@ const App = () => {
       <Wrapper>
         <Drawer anchor='right' open={cartOpen} onClose={() => setCartOpen(false)}>
           <Cart 
-              cartItems={cartItems} 
+              cartItems={cartItems}
+              addToCart={handleAddToCart}
           />
         </Drawer>
         <StyledButton onClick={() => setCartOpen(true)}>
