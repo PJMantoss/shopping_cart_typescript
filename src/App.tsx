@@ -34,7 +34,7 @@ const App = () => {
     console.log(data);
 
     const getTotalItems = (items: CartItemType[]) => 
-        items.reduce((acc: number, items) => acc + items.amount, 0);
+        items.reduce((acc: number, item) => acc + item.amount, 0);
 
     const handleAddToCart = () => null;
 
