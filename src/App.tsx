@@ -48,7 +48,9 @@ const App = () => {
     <div className="App">
       <Wrapper>
         <Drawer anchor='right' open={cartOpen} onClose={() => setCartOpen(false)}>
-          <Cart cartItems={cartItems} />
+          <Cart 
+              cartItems={cartItems} 
+          />
         </Drawer>
         <StyledButton onClick={() => setCartOpen(true)}>
           <Badge badgeContent={getTotalItems(cartItems)} color="error">
