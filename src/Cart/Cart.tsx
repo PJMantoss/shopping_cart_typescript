@@ -9,3 +9,9 @@ type Props = {
     addToCart: (clickedItem: CartItemType) => void;
     removeFromCart: (id: number) => void;
 }
+
+const Cart: React.FC<Props> = ({ cartItems, addToCart, removeFromCart }) => {
+    return
+}
+
+export default Cart;
