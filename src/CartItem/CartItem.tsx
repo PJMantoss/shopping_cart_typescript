@@ -4,6 +4,11 @@ import { CartItemType } from '../App';
 //Styles
 import { Wrapper } from './CartItem.styles';
 
-const CartItem: React.FC = () => <div>Cart Item</div>
+type Props = {
+    item: CartItemType[];
+    addToCart: (clickedItem: CartItemType) => void;
+}
+
+const CartItem: React.FC<Props> = () => <div>Cart Item</div>
 
 export default CartItem;
