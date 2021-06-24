@@ -39,7 +39,7 @@ const App = () => {
 
     const handleAddToCart = () => null;
 
-    const removeFromCart = () => null;
+    const handleRemoveFromCart = () => null;
 
     if(isLoading) return <LinearProgress />
     if(error) return <div className="errorDiv">Something went wrong...</div>
@@ -51,7 +51,7 @@ const App = () => {
           <Cart 
               cartItems={cartItems}
               addToCart={handleAddToCart}
-              removeFromCart={removeFromCart}
+              removeFromCart={handleRemoveFromCart}
           />
         </Drawer>
         <StyledButton onClick={() => setCartOpen(true)}>
