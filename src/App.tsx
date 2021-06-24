@@ -37,7 +37,12 @@ const App = () => {
     const getTotalItems = (items: CartItemType[]) => 
         items.reduce((acc: number, item) => acc + item.amount, 0);
 
-    const handleAddToCart = () => null;
+    const handleAddToCart = (clickedItem: CartItemType) => {
+      setCartItems(prev => {
+        //If item is already in the cart
+        const isItemInCart = prev.find(item => item.id === clickedItem.id)
+      }) 
+    };
 
     const handleRemoveFromCart = () => null;
 
