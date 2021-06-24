@@ -13,7 +13,7 @@ type Props = {
 const CartItem: React.FC<Props> = ({ item, addToCart, removeFromCart }) => {
     return(
         <Wrapper>
-            <h2></h2>
+            <div></div>
         </Wrapper>
     )
 }
